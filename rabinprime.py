@@ -88,11 +88,8 @@ def isPrime( n, k):
 # Number of iterations
 k = 4;
 
-x = input("Input the start of the range: ")
-x = int(x)
-
-y = input("Input the end of the range: ")
-y = int(y)
+x = int(input("Input the start of the range: "))
+y = int(input("Input the end of the range: "))
 
 print("All primes smaller than 100: ");
 for n in range(x,y):
