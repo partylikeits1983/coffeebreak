@@ -1,9 +1,9 @@
 import datetime
 
-p1 = datetime.datetime.now()
 fizzbuzz = 0
-
 def num(x):
+    p1 = datetime.datetime.now()
+
     for i in range(1,x):
         if i % 3 == 0 and i % 5 == 0:
             print(i, "fizzbuzz")
@@ -15,6 +15,10 @@ def num(x):
         elif i % 5 == 0:
            print(i, "buzz")
 
+    p2 = datetime.datetime.now()
+    time = p2 - p1
+    print(time)
+    
 def define():
     x = input()
     x = int(x)
@@ -24,7 +28,3 @@ define()
 
 print("the number of fizzbuzzes in the set:", fizzbuzz)
 
-p2 = datetime.datetime.now()
-time = p2 - p1
-
-print(time)
