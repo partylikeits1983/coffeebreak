@@ -3,7 +3,6 @@ location = "home"
 sleeping = False
 
 
-
 def code():
     print("code")
 
