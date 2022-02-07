@@ -1,14 +1,13 @@
 <body>
 <h1>Is Prime?</h1>
 
-a: <input type="number" name="a" id="a"><br>
+<input type="number" name="a" id="a"><br>
 
 <button type="button" onclick="document.getElementById ( 'Result' ).innerHTML = isPrime ()"> Calculate </button>
 
 <h1 id="Result">  </h1>
 
 <script>
-
 function isPrime() {
     var n = document.getElementById("a").value;
 
@@ -16,6 +15,5 @@ function isPrime() {
         if(n % i === 0) return false; 
     return n > 1;  
 }
-
 </script>
 </body>
